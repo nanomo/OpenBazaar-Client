@@ -5234,10 +5234,71 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   height: auto;
 }
 
+/* turn off animations and transitions with this style */
+
+#ov1.notFancy,
+#ov1.notFancy #userPage,
+#ov1.notFancy #obContainer,
+#ov1.notFancy #overlay,
+#ov1.notFancy #sideBar,
+#ov1.notFancy #pageNav,
+#ov1.notFancy #modalHolder,
+#ov1.notFancy #messageModal,
+#ov1.notFancy #statusBar {
+  transition: none;
+  -webkit-filter: none;
+  opacity: 1;
+  animation: none;
+}
+
+#ov1.notFancy #sideBar .sideBarSlidShow {
+  display: none;
+}
+
+#ov1.notFancy #sideBar.sideBarSlid .sideBarSlidShow {
+  display: block;
+}
+
+#ov1.notFancy .gridItemControls {
+  display: none;
+}
+
+#ov1.notFancy .gridItemControls .btn-gridItemControl:hover {
+  display: block;
+}
+
+#ov1.notFancy .btn .postConfirm {
+  display: none;
+}
+
+#ov1.notFancy .confirm.btn .preConfirm {
+  display: none;
+}
+
+#ov1.notFancy .confirm.btn .postConfirm {
+  display: inline-block;
+}
+
+#ov1.notFancy .labelWrap.fade {
+  display: none;
+}
+
+#ov1.notFancy .labelWrap.fadeIn {
+  display: block;
+}
+
+#ov1.notFancy .fadeOut {
+  display: none;
+}
+
 /* terrible hack, TODO: remove before production */
 
 #ov1 .TODO.TODO.TODO.TODO.TODO {
   background: #535353;
   opacity: 0.2;
   pointer-events: none;
+}
+
+#ov1 .TODO.TODO.TODO.TODO.TODO {
+  display: none; /* hide when live */
 }
